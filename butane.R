@@ -1,0 +1,9 @@
+Vbar=3.0
+T=370
+R=0.083145
+P=R*T/Vbar
+cat("ideal gas law equation=",P,"\n")
+alpha=16.44
+beta=0.07245
+P=R*T/(Vbar-beta)-alpha/((Vbar*(Vbar+beta))+(beta*(Vbar-beta)))
+cat("Peng-Robinson equation=",P,"\n")
